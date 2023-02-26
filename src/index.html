@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Taneza Investments</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link href="./style.css" rel="stylesheet">
+</head>
+
+<body class="overscroll-auto bg-beige-300">
+	<main>
+		<div class="md:h-[95vh] bg-black-500 text-white relative">
+			<div class="container px-4 mx-auto flex flex-col lg:flex-row h-full lg:items-center">
+				<div class="z-10">
+					<h1 class="font-display pt-20 lg:pt-0 uppercase text-5xl md:text-7xl mb-6">
+						<span class="overflow-hidden inline-block">
+							<span class="animate-slideUpFromBottom inline-block">Tañeza</span>
+						</span><br />
+						<span class="overflow-hidden inline-block">
+							<span class="animate-slideUpFromBottomWithMargin inline-block">Investments</span>
+						</span>
+					</h1>
+					<div class="w-20 h-1.5 md:h-2.5 bg-white"></div>
+				</div>
+				<div class="absolute bottom-4 left-0 right-0 flex justify-center">
+					<div
+						class="animate-bounce bg-gray-800 w-8 h-8 ring-1 ring-gray-700 flex items-center justify-center rounded-full shadow-lg">
+						<svg class="w-4 h-4 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							viewBox="0 0 24 24" stroke="currentColor">
+							<path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+						</svg>
+					</div>
+				</div>
+				<div id="crownContainer" class="w-full h-72 md:h-full relative">
+					<canvas id="crown" class="absolute inset-0"></canvas>
+				</div>
+			</div>
+		</div>
+		<div class="mx-auto py-16 items-center shadow bg-white">
+			<section class="mb-20 px-6 max-w-3xl mx-auto">
+				<div class="grid md:grid-cols-2 items-center gap-4">
+					<img class="my-0 w-full max-h-[470px] object-top object-cover" src="../assets/bio-picture.jpg" />
+					<div class="min-h-[90%] shrink p-6 bg-gray-200 prose">
+						<h2 class="my-0 mb-1.5 text-2xl">About us</h2>
+						<div class="h-1.5 w-8 mb-4 bg-black-900"></div>
+						<p>We're a small family-owned investment agency based out of Utah county.</p>
+						<p>We pride ourselves on being trustworthy and reliable, and we know that trust is crucial in this industry.
+							We work hard to build strong relationships with our partners based on honesty and integrity.</p>
+					</div>
+				</div>
+			</section>
+			<section class="mb-20 px-6 max-w-3xl mx-auto">
+				<div class="flex flex-col items-center mb-10">
+					<h1 class="text-center mb-3 font-bold text-4xl">What we do</h1>
+					<div class="h-2 w-10 bg-black-900 mx-auto"></div>
+				</div>
+				<div class="flex gap-6 flex-col">
+					<div
+						class="border-[6px] border-black-400 flex items-center w-full hover:scale-[1.025] hover:shadow-lg transition group">
+						<div
+							class="basis-20 md:basis-1/6 h-20 my-4 border-r-2 border-black-400 text-center flex items-center justify-center text-3xl font-bold font-mono">
+							01
+						</div>
+						<div class="basis-4/6 mx-6 my-4 flex flex-col justify-center shrink">
+							<span class="block text-lg font-bold">Real Estate</span>
+							<div>
+								Property has proven to be a stable source of cash flow and value appreciation. We're working to ensure
+								we secure this investment in Utah for all of our partners.
+							</div>
+						</div>
+						<!-- <div class="flex items-center font-bold text-3xl opacity-0 transform -translate-x-2 group-hover:translate-x-0 group-hover:opacity-100 transition">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-10 w-10 ml-1">
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"></path>
+							</svg>
+						</div> -->
+					</div>
+					<div
+						class="border-[6px] border-black-400 flex items-center w-full hover:scale-[1.025] hover:shadow-lg transition group">
+						<div
+							class="basis-20 md:basis-1/6 h-20 my-4 border-r-2 border-black-400 text-center flex items-center justify-center text-3xl font-bold font-mono">
+							02
+						</div>
+						<div class="basis-4/6 mx-6 my-4 flex flex-col justify-center shrink">
+							<span class="block text-lg font-bold">E-Commerce</span>
+							<div>
+								Online shopping has become an explosive market as of late. We work with ambitious people from
+								ground-zero to build kickass brands that scale.
+							</div>
+						</div>
+						<!-- <div class="flex items-center font-bold text-3xl opacity-0 transform -translate-x-2 group-hover:translate-x-0 group-hover:opacity-100 transition">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-10 w-10 ml-1">
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"></path>
+							</svg>
+						</div> -->
+					</div>
+					<div
+						class="border-[6px] border-black-400 flex items-center w-full hover:scale-[1.025] hover:shadow-lg transition group">
+						<div
+							class="basis-20 md:basis-1/6 h-20 my-4 border-r-2 border-black-400 text-center flex items-center justify-center text-3xl font-bold font-mono">
+							03
+						</div>
+						<div class="basis-4/6 mx-6 my-4 flex flex-col justify-center shrink">
+							<span class="block text-lg font-bold">People</span>
+							<div>
+								We believe everybody has a dream. We want to be there every step of the way. We partner with visionaries
+								to enable them to see their dreams through.
+							</div>
+						</div>
+						<!-- <div class="flex items-center font-bold text-3xl opacity-0 transform -translate-x-2 group-hover:translate-x-0 group-hover:opacity-100 transition">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-10 w-10 ml-1">
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"></path>
+							</svg>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<section class="mb-16 px-6 prose mx-auto">
+				<div class="flex flex-col items-center mb-10">
+					<h1 class="text-center mb-3">Get in touch</h1>
+					<div class="mb-4 w-3/5 text-center">
+						Want to work with us? Drop us a line and we'll get in touch as soon as we can.
+					</div>
+					<div class="h-2 w-10 bg-black-900 mx-auto"></div>
+				</div>
+				<div class="border bg-gray-50 p-6">
+					<form action="https://api.web3forms.com/submit" method="POST">
+						<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+						<input type="hidden" name="redirect" value="https://web3forms.com/success">
+						<div class="flex flex-col md:flex-row gap-4 mb-4">
+							<label class="block w-full">
+								<span>First Name</span>
+								<input class="block w-full" type="text" name="first_name" required />
+							</label>
+							<label class="block w-full">
+								<span>Last Name</span>
+								<input class="block w-full" type="text" name="last_name" required />
+							</label>
+						</div>
+						<label class="block mb-4">
+							<span>Email</span>
+							<input class="block w-full" type="email" name="email" required />
+						</label class="block">
+						<label class="block mb-4">
+							<span>Message</span>
+							<textarea class="block w-full" name="message" required></textarea>
+						</label>
+						<button
+							class="bg-black-500 text-white px-8 py-3 font-medium mx-auto mt-6 block transition-all hover:shadow-lg hover:scale-105"
+							type="submit">Send Message</button>
+					</form>
+				</div>
+			</section>
+		</div>
+		<footer class="h-50 px-6 sticky bottom-0 -z-10">
+			<div class="max-w-2xl mx-auto">
+				<div class="flex flex-col md:flex-row text-center md:text-left items-center md:justify-between py-12">
+					<div>
+						<div class="text-sm uppercase font-semibold mb-1.5">Contact</div>
+						<a class="block underline mb-2" href="mailto:bodie@tanezainvestments.com"
+							target="_blank">bodie@tanezainvestments.com</a>
+						<a class="block underline mb-2" href="mailto:bodie@tanezainvestments.com"
+							target="_blank">heather@tanezainvestments.com</a>
+						<div>95 W 100 S, P.O. #527</div>
+						<div>Provo UT, 84601-9998</div>
+					</div>
+					<div>
+						<img class="mt-6 mx-auto md:mt-0 md:mr-0 mb-3 w-6/12" src="../assets/signature.png" />
+						<div class="text-right text-sm">© 2022, Taneza Investments</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+	<script defer src="/_vercel/insights/script.js"></script>
+</body>
+
+</html>
