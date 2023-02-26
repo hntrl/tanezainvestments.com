@@ -14,10 +14,11 @@
 
 <body class="overscroll-auto bg-beige-300">
 	<main>
-		<div class="md:h-[95vh] bg-black-500 text-white relative">
-			<div class="container px-4 mx-auto flex flex-col lg:flex-row h-full lg:items-center">
+		<div class="lg:h-[95vh] pb-24 pt-12 lg:py-0 bg-black-500 text-white relative">
+			<div class="container px-4 mx-auto flex flex-col gap-6 md:gap-12 lg:flex-row h-full lg:items-center">
+				<img class="w-3/5 lg:w-1/2 mx-auto p-6 lg:order-2 object-contain" src="../assets/crown.png" />
 				<div class="z-10">
-					<h1 class="font-display pt-20 lg:pt-0 uppercase text-5xl md:text-7xl mb-6">
+					<h1 class="font-display uppercase text-center lg:text-left text-5xl md:text-7xl mb-6">
 						<span class="overflow-hidden inline-block">
 							<span class="animate-slideUpFromBottom inline-block">Tañeza</span>
 						</span><br />
@@ -25,7 +26,7 @@
 							<span class="animate-slideUpFromBottomWithMargin inline-block">Investments</span>
 						</span>
 					</h1>
-					<div class="w-20 h-1.5 md:h-2.5 bg-white"></div>
+					<div class="w-20 h-1.5 mx-auto lg:mx-0 lg:h-2.5 bg-white"></div>
 				</div>
 				<div class="absolute bottom-4 left-0 right-0 flex justify-center">
 					<div
@@ -35,9 +36,6 @@
 							<path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
 						</svg>
 					</div>
-				</div>
-				<div id="crownContainer" class="w-full h-72 md:h-full relative">
-					<canvas id="crown" class="absolute inset-0"></canvas>
 				</div>
 			</div>
 		</div>
@@ -129,7 +127,7 @@
 				</div>
 				<div class="border bg-gray-50 p-6">
 					<form action="https://api.web3forms.com/submit" method="POST">
-						<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+						<input id="form-access" type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 						<input type="hidden" name="redirect" value="https://web3forms.com/success">
 						<div class="flex flex-col md:flex-row gap-4 mb-4">
 							<label class="block w-full">
@@ -170,7 +168,7 @@
 					</div>
 					<div>
 						<img class="mt-6 mx-auto md:mt-0 md:mr-0 mb-3 w-6/12" src="../assets/signature.png" />
-						<div class="text-right text-sm">© 2022, Taneza Investments</div>
+						<div id="year-indicator" class="text-right text-sm">© Taneza Investments</div>
 					</div>
 				</div>
 			</div>

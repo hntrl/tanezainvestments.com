@@ -28,16 +28,29 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: "html-loader",
+        options: {
+          sources: {
+            list: [
+              "...",
+              {
+                tag: "script",
+                attribute: "src",
+                type: "src",
+                filter: () => false,
+              },
+            ],
+          },
+        },
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|glb)$/i,
         type: 'asset',
-      },
+      }
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     })
   ]
 }
